@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bio API Service</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(135deg,#020024,#090979,#00d4ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,Helvetica,sans-serif;
+    color:white;
+}
+
+.card{
+    background:rgba(0,0,0,0.65);
+    padding:30px;
+    border-radius:16px;
+    max-width:420px;
+    width:90%;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,255,255,0.4);
+}
+
+h1{
+    color:#00ffff;
+    margin-bottom:8px;
+}
+
+p{
+    font-size:14px;
+    opacity:0.85;
+}
+
+.api-box{
+    margin-top:18px;
+    padding:12px;
+    background:#0b0b0b;
+    border-radius:10px;
+    font-size:13px;
+    word-break:break-all;
+}
+
+/* RGB TEXT */
+.rgb-text{
+    margin-top:20px;
+    font-weight:bold;
+    font-size:20px;
+    background:linear-gradient(
+        270deg,
+        #ff0000,
+        #ff00ff,
+        #0000ff,
+        #00ffff,
+        #00ff00,
+        #ffff00,
+        #ff0000
+    );
+    background-size:1400% 1400%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:rgb 6s ease infinite;
+}
+
+@keyframes rgb{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* TELEGRAM BUTTON */
+.tg-btn{
+    margin-top:18px;
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:30px;
+    background:#0088cc;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 0 15px rgba(0,136,204,0.8);
+    transition:0.3s;
+}
+
+.tg-btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(0,136,204,1);
+}
+
+.status{
+    margin-top:15px;
+    color:#00ff9c;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+    <h1>🚀 Bio API Service</h1>
+    <p>Secure AES Encrypted Bio Update API</p>
+
+    <div class="api-box">
+        <b>Endpoint:</b><br>
+        /send_bio?token=YOUR_TOKEN&bio=YOUR_BIO
+    </div>
+
+    <div class="status">🟢 API STATUS: ONLINE</div>
+
+    <!-- RGB TEXT -->
+    <div class="rgb-text">THARKI CODEX</div>
+
+    <!-- TELEGRAM BUTTON -->
+    <a class="tg-btn" href="https://t.me/+67njAXrTToBmY2Y9" target="_blank">
+        🚀 Join Telegram
+    </a>
+</div>
+</body>
+</html>
